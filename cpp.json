@@ -68,7 +68,7 @@
 		  "}",
 		  "int main()",
 		  "{",
-		  "    fast;",
+		  "    //fast;",
 		  "    lin1(t)",
 		  "    while(t--)",
 		  "    {",
