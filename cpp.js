@@ -27,6 +27,8 @@
 		  "#include<vector>",
 		  "#include<queue>",
 		  "#include<stack>",
+		  "#include<climits>",
+		  "#include<map>",
 		  "#define ll long long",
 		  "#define ull unsigned long long",
 		  "#define vi vector<int>",
