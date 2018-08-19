@@ -30,6 +30,7 @@
 		  "#define ll long long",
 		  "#define ull unsigned long long",
 		  "#define vi vector<int>",
+		  "#define vlli vector<ll int>",
 		  "#define vvi vector<vector<int>>",
 		  "#define vpii vector<pair<int,int>>",
 		  "#define vs vector<string>",
