@@ -44,6 +44,7 @@
 		  "#define forj(s,e) for(j=s;j<=e;j++)",
 		  "#define fork(s,e) for(k=s;k<=e;k++)",
 		  "#define rep(i,s,e) for(int i=s;i<=e;i++)",
+		  "#define brep(i,s,e) for(int i=s;i>=e;i--)",
 		  "#define all(x) x.begin(),x.end()",
 		  "#define mem(x,y) memset(x,y,sizeof(x));",
 		  "#define pi 3.14159265358979323846264338327950",
