@@ -40,6 +40,7 @@
 		  "#define lin2(x,y) ll int x, y; x = scan(), y = scan();",
 		  "#define lin3(x,y,z) ll int x, y, z; x = scan(), y = scan(), z = scan();",
 		  "#define pb(x) push_back(x)",
+		  "#define makep(x,y) make_pair(x,y)",
 		  "#define mx(a,b) (a)>(b)?(a):(b)",
 		  "#define mn(a,b) (a)<(b)?(a):(b)",
 		  "#define fori(s,e) for(i=s;i<=e;i++)",
