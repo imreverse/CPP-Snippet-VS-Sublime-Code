@@ -99,5 +99,23 @@
 		  "}",
 		],
 		"description": "Writes pre-written code automatically"
+	  },
+		"Small Pre-written Code": {
+		"prefix": "haha",
+		"body": [
+		  "/*",
+		  "* Author: Aayush Tyagi",
+		  "* Created: $CURRENT_DATE-$CURRENT_MONTH-$CURRENT_YEAR $CURRENT_HOUR:$CURRENT_MINUTE:$CURRENT_SECOND",
+		  "* Language: C++",
+		  "*/",
+		  "#include<iostream>",
+		  "using namespace std;",
+		  "int main()",
+		  "{",
+		  "    //fast;",
+		  "    $2",
+		  "}",
+		],
+		"description": "Writes pre-written code automatically"
 	  }
 }
