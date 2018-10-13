@@ -35,7 +35,6 @@
 		  "",
 		  "ll MOD7 = 1e9+7;",
 		  "ll MOD9 = 1e9+9;",
-		  "//ld PI = M_PI;",
 		  "",
 		  "#define pb push_back",
 		  "#define mp make_pair",
