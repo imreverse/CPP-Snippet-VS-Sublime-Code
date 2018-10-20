@@ -12,6 +12,7 @@
 		  "#include<cstring>",
 		  "#include<climits>",
 		  "#include<algorithm>",
+		  "#include<bitset>",
 		  "#include<vector>",
 		  "#include<deque>",
 		  "#include<queue>",
