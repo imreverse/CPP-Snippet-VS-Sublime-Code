@@ -50,7 +50,7 @@
 		  "#define brep(i,s,e) for(int i=s;i>=e;i--)",
 		  "#define all(x) x.begin(),x.end()",
 		  "#define mem(x,y) memset(x,y,sizeof(x))",
-		  "#define bit_count(x) __builtin_popcount(x)",
+		  "#define ones(x) __builtin_popcount(x)",
 		  "#define pi 3.14159265358979323846264338327950",
 		  "#define MOD7 1000000007",
 		  "#define MOD9 1000000009",
