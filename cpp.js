@@ -51,7 +51,7 @@
 		  "int main()",
 		  "{",
 		  "    //fast;",
-		  "    ofstream out("output.txt");",
+		  "    ofstream out(\"output.txt\");",
 		  "    ll t;",
 		  "    cin>>t;",
 		  "    while(t--)",
