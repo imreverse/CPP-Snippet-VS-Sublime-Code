@@ -35,7 +35,7 @@
 		  "typedef vector<int> v32;",
 		  "typedef vector<ll> v64;",
 		  "",
-		  "ll INF  = 1e9;",
+		  "ll INF  = 1e+9;",
 		  "ll MOD7 = 1e9+7;",
 		  "ll MOD9 = 1e9+9;",
 		  "",
