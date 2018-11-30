@@ -38,7 +38,7 @@
 		  "ll INF  = 1e9;",
 		  "ll MOD7 = 1e9+7;",
 		  "ll MOD9 = 1e9+9;",
-		  ""
+		  "",
 		  "#define pb push_back",
 		  "#define mp make_pair",
 		  "#define rep(i,s,e) for(int i=s;i<=e;i++)",
