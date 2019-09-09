@@ -43,8 +43,8 @@ int main()
  
     auto start = chrono::high_resolution_clock::now();
     
-    LL t;
-    cin>>t;
+    LL t = 1;
+    // cin>>t;
     rep(test,1,t)
     {
         ${1}
