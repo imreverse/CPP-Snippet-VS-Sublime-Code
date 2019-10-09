@@ -2,7 +2,9 @@
 	"CPP": {
 	"prefix": "hekk",
 	"body": [
-	  "// वाह मोदी जी वाह!",
+	  "// Aayush Tyagi",
+	  "// DTU-IT",
+	  "// 2K17/IT/003",
 	  "",
 	  "#include<iostream>",
 	  "#include<algorithm>",
