@@ -37,7 +37,7 @@
 	  "#define mp           make_pair",
 	  "#define ff           first",
 	  "#define ss           second",
-      "#define endl         '\\n'",
+	  "#define endl         '\\n'",
 	  "#define rep(i,s,e)   for(int i=s;i<=e;i++)",
 	  "#define brep(i,s,e)  for(int i=s;i>=e;i--)",
 	  "#define all(x)       (x).begin(),(x).end()",
