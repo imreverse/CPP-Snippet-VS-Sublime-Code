@@ -189,6 +189,26 @@
     ],
     "description": "PRIMEFACTORIZATION"
     }
+    "FACTORIZATION": {
+    "prefix": "fac",
+    "body": [
+        "// Factorization of number N",
+        "vi divisor;",
+        "void factorize(int n)",
+        "{",
+        "    for(int i=1; i*i<=n; i++)",
+        "    {",
+        "        if( n%i == 0 )",
+        "        {",
+        "            divisor.pb( i );",
+        "            if( i*i != n )",
+        "            divisor.pb( n/i );",
+        "        }",
+        "    }",
+        "}"
+    ],
+    "description": "PRIMEFACTORIZATION"
+    }
     "HASH": {
     "prefix": "milf",
     "body": [
