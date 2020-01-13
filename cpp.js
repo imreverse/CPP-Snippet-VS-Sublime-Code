@@ -81,4 +81,131 @@
     ],
     "description": "CPP"
     }
+    "DSU": {
+    "prefix": "dsu",
+    "body": [
+        "// Disjoint Set Union",
+        "int par[(int)4e5+5];mem( par,-1 );",
+        "int PARENT(int x)",
+        "{",
+        "    int root = x;",
+        "    while( par[root]>=0 ) root = par[root];",
+        "    while( x!=root )",
+        "    {",
+        "        int old = x;",
+        "        x = par[x];",
+        "        par[old] = root;",
+        "    }",
+        "    return root;",
+        "}",
+        "void UNITE(int x, int y)",
+        "{",
+        "    x = PARENT(x), y = PARENT(y);",
+        "    if( x==y ) return;",
+        "    if( par[x]>par[y] ) swap( x,y );",
+        "    par[x] += par[y], par[y] = x;",
+        "}"
+    ],
+    "description": "DSU"
+    }
+    "MODEXP": {
+    "prefix": "modexp",
+    "body": [
+        "// Fast Exponentian LOG EXP",
+        "int modexp(int base, int exp)",
+        "{",
+        "    int res = 1;",
+        "    while( exp>0 )",
+        "    {",
+        "        if( exp&(int)1 ) res *= base, res %= MOD;",
+        "        base *= base, base %= MOD, exp >>= (int)1;",
+        "    }",
+        "    return res;",
+        "}"
+    ],
+    "description": "MODEXP"
+    }
+    "MODINV": {
+    "prefix": "modinv",
+    "body": [
+        "// Extended Euclidean Algorithm ax + by = gcd(a,b)",
+        "// returns gcd and stores x and y",
+        "int exgcd(int a, int b, int &x, int &y)",
+        "{",
+        "    int g = a; x = 1, y = 0;",
+        "    if( b ) g = exgcd( b,a%b,y,x ), y -= (a/b)*x;",
+        "    return g;",
+        "}",
+        "",
+        "// Modular Multiplicative Inverse of a (mod m)",
+        "int modinv(int a, int m)",
+        "{",
+        "    int x, y;",
+        "    exgcd( a,m,x,y );",
+        "    return ( x+m )%m;",
+        "}"
+    ],
+    "description": "MODINV"
+    }
+    "SIEVE": {
+    "prefix": "sieve",
+    "body": [
+        "// Sieve",
+        "vi prime;",
+        "vi comp;",
+        "bool isp[(int)1e7+6];",
+        "void sieve(int n = 1e7+5)",
+        "{",
+        "    mem( isp,true );",
+        "    isp[0] = isp[1] = false;",
+        "    for(int j=4; j<=n; j+=2) isp[j] = false;",
+        "    for(int i=3; i*i<=n; i+=2)",
+        "    {",
+        "        if( !isp[i] ) continue;",
+        "        for(int j=i*i; j<=n; j+=i) isp[j] = false;",
+        "    }",
+        "    rep(i,2,n) isp[i] ? prime.pb(i) : comp.pb(i);",
+        "}"
+    ],
+    "description": "SIEVE"
+    }
+    "PRIMEFACTORIZATION": {
+    "prefix": "pfac",
+    "body": [
+        "// Prime Factorization of number N",
+        "vi pfac;",
+        "void primefac(int n)",
+        "{",
+        "    for(int i=2; i*i<=n; i++)",
+        "    {",
+        "        if( n%i == 0 )",
+        "        {",
+        "            pfac.pb( i );",
+        "            while( n%i==0 ) n/=i;",
+        "        }",
+        "    }",
+        "    if( n>1 ) pfac.pb( n );",
+        "}"
+    ],
+    "description": "PRIMEFACTORIZATION"
+    }
+    "HASH": {
+    "prefix": "milf",
+    "body": [
+        "struct HASH",
+        "{",
+        "    static uint64_t splitmix64(uint64_t x)",
+        "    {",
+        "        x += UINT64_C(0x9e3779b97f4a7c15);",
+        "        x = (x ^ (x >> 30)) * UINT64_C(0xbf58476d1ce4e5b9);",
+        "        x = (x ^ (x >> 27)) * UINT64_C(0x94d049bb133111eb);",
+        "        return x ^ (x >> 31);",
+        "    }",
+        "    size_t operator()(uint64_t x) const",
+        "    {  return splitmix64( x+crng );  }",
+        "};",
+        ""
+    ],
+    "description": "HASH"
+    }
 }
